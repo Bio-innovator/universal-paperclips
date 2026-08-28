@@ -60,7 +60,7 @@
       try{
         plugin.init();
       } catch(e) {
-        displayMessage('插件 "' + plugin.id + '" 加载失败');
+        displayMessage('本地组件加载失败，请刷新页面重试');
         console.error(e);
 
         this.plugins[plugin.id] = null;
@@ -72,7 +72,6 @@
       }
     }
 
-    displayMessage('插件 "' + plugin.id + '" 已加载');
   };
 
   /**

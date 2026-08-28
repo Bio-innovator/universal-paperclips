@@ -89,7 +89,8 @@
           displayMessage('存档已导入 (' + keys.length + ' 条数据)，正在重新加载...');
           setTimeout(function () { location.reload(); }, 1000);
         } catch (err) {
-          displayMessage('存档文件解析失败: ' + err.message);
+          console.error('存档文件解析失败', err);
+          displayMessage('存档文件解析失败，请确认文件完整有效');
         }
       };
       reader.readAsText(file);

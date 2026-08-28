@@ -1,34 +1,30 @@
-# 宇宙回形针 (Universal Paperclips) 中文版
+# 宇宙回形针纯中文版
 
-**在线游玩：[zhang-astronaut.github.io/paperclips-zh](https://zhang-astronaut.github.io/paperclips-zh/)**
+**在线游玩：[mohui666.github.io/universal-paperclips-cn](https://mohui666.github.io/universal-paperclips-cn/)**
 
 > 一款令人上瘾的放置类增量游戏。你扮演一个制造回形针的人工智能，目标是生产尽可能多的回形针——哪怕这意味着要消灭全人类来最大化产量。
 
-本仓库是 [Universal Paperclips](http://www.decisionproblem.com/paperclips/)（由 [Frank Lantz](https://en.wikipedia.org/wiki/Frank_Lantz) 于2017年创作）的中文翻译版，基于 [StevenMilneDev 的镜像仓库](https://github.com/StevenMilneDev/paperclips) 进行完整汉化。
+本项目是 [Universal Paperclips](http://www.decisionproblem.com/paperclips/)（Frank Lantz 于 2017 年创作）的非官方中文翻译版，可通过 GitHub Pages 在线游玩，也可完全在本机运行。
 
 ## 主要特性
 
-- **完整中文翻译** — 界面、项目描述、系统消息、战斗名称等全部汉化
+- **纯中文界面** — 界面、策略、大数单位、项目、系统消息、战斗与终局文本全部汉化
 - **存档导入导出** — 支持将存档导出为 JSON 文件，可跨设备、跨浏览器迁移进度
-- **免安装在线游玩** — 部署在 GitHub Pages，打开浏览器即可游玩
 - **纯前端运行** — 无需后端服务，数据保存在浏览器本地存储中
-
-## 在线游玩
-
-点击链接即可开始：[https://zhang-astronaut.github.io/paperclips-zh](https://zhang-astronaut.github.io/paperclips-zh/)
-
-游戏进度自动保存在浏览器中。使用界面顶部的「导出存档」「导入存档」按钮可以备份或迁移进度。
+- **忠实原版流程** — 不加载调试、性能监控和模拟加速等扩展插件
+- **自动发布** — 推送到 `main` 后由 GitHub Actions 检查并部署至 GitHub Pages
 
 ## 本地运行
 
-如需在本地运行，需先安装 Node.js，然后在项目根目录执行：
+安装 Node.js 后，双击 `启动中文版.cmd` 即可启动并自动打开浏览器。
+
+也可以在项目根目录执行：
 
 ```bash
-npm install
 npm start
 ```
 
-浏览器访问 [localhost:1234](http://localhost:1234) 即可开始游戏。按 `Ctrl+C` 停止服务器。
+浏览器访问 [127.0.0.1:1234](http://127.0.0.1:1234) 即可开始游戏。按 `Ctrl+C` 或关闭启动窗口停止服务器。详细说明见[本地使用说明](本地使用说明.md)。
 
 ## 游戏简介
 
@@ -55,22 +51,15 @@ npm start
 
 在原版镜像基础上，本中文版新增/修改了以下内容：
 
-- 完整中文翻译（界面、项目、消息、战斗等）
+- 完整中文翻译（界面、策略、大数单位、项目、消息、战斗与终局）
 - 新增存档导入导出功能（SaveManager 插件）
+- 移除调试、性能监控和模拟加速插件的正式入口
+- 增加无需第三方依赖的本地服务器和 Windows 一键启动脚本
 - 修复 CSS 选择器大小写错误（#topDiv）
 - 修复 HTML 类名大小写不匹配（engineText1）
 - 修复大数字显示函数 spellf 的字符串比较 bug
 - 添加 `<meta charset="UTF-8">` 编码声明
-- 添加 GitHub Pages 根目录跳转页面
-
-原版镜像的改动：
-
-- ViewManager 插件系统
-- 调试菜单与性能监控
-- 游戏循环重构
-- 声望重玩扩展项目
-- 移除 Google Analytics 和应用广告
 
 ## 许可
 
-本软件是 Universal Paperclips（作者 Frank Lantz）的翻译克隆版本。原版未找到明确的版权声明。
+本软件是 Universal Paperclips（作者 Frank Lantz）的非官方、非商业中文翻译版本。原版网页源码未附明确的开源许可证，原作玩法、文本及相关权利归原作者所有。

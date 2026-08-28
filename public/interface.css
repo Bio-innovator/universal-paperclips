@@ -12,6 +12,10 @@
   }
 }
 
+body {
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+}
+
 .hidden {
   display: none;
 }

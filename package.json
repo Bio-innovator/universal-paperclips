@@ -1,18 +1,12 @@
 {
-  "name": "@smilne/paperclips",
+  "name": "universal-paperclips-cn-local",
   "version": "1.0.0",
-  "description": "A mirror of the clicker game Universal Paperclips",
+  "private": true,
+  "description": "宇宙回形针纯中文本地版",
   "main": "public/index.html",
   "scripts": {
-    "start": "http-server ./public -p 1234",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/IAmTehCreator/paperclips.git"
-  },
-  "publishConfig": {
-    "registry": "https://nexus.smilne.co.uk/repository/npm-private/"
+    "start": "node server.cjs",
+    "test": "node scripts/check-localization.cjs"
   },
   "keywords": [
     "game",
@@ -20,11 +14,8 @@
     "paperclips",
     "ai"
   ],
-  "author": "Steven <stevenimilne@outlook.com> (http://smilne.co.uk/)",
+  "author": "Frank Lantz（原作）；第三方中文本地化",
   "license": "UNLICENSED",
-  "homepage": "https://bitbucket.org/IAmTehCreator/paperclips#readme",
-  "devDependencies": {
-    "http-server": "^0.11.1"
-  },
+  "devDependencies": {},
   "dependencies": {}
 }

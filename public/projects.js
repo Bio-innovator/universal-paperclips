@@ -143,7 +143,7 @@ var project6 = {
     element: null,
     effect: function(){
         project6.flag = 1;
-        displayMessage("有一个由尘埃构成的AI，它的诗歌赢得了人类的信任...");
+        displayMessage("有一个由尘埃构成的人工智能，它的诗歌赢得了人类的信任……");
         creativity = creativity - 10;
         trust = trust +1;
         project6.element.parentNode.removeChild(project6.element);
@@ -1114,7 +1114,7 @@ projects.push(project40b);
 var project46 = {
     id: "projectButton46",
     title: "太空探索 ",
-    priceTag: "(120,000 运算, 10,000,000 兆瓦秒, 5 oct 回形针)",
+    priceTag: "(120,000 运算, 10,000,000 兆瓦秒, 5 千秭回形针)",
     description: "拆除地面设施，向整个宇宙扩张",
     trigger: function(){return humanFlag == 0 && availableMatter == 0},
     uses: 1,
@@ -1201,9 +1201,9 @@ projects.push(project51);
 
 var project60 = {
     id: "projectButton60",
-    title: "新策略：A100 ",
+    title: "新策略：全选甲 ",
     priceTag: "(15,000 运算)",
-    description: "总是选择A ",
+    description: "总是选择行动甲 ",
     trigger: function(){return project20.flag == 1},
     uses: 1,
     cost: function(){return operations>=15000},
@@ -1214,12 +1214,12 @@ var project60 = {
         standardOps = standardOps-15000;
         allStrats[1].active = 1;
         strats.push(stratA100);
-        displayMessage("A100已添加到策略池");
+        displayMessage("全选甲已添加到策略池");
         tourneyCost = tourneyCost + 1000;
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
         var el = document.createElement("option");
-        el.textContent = "A100";
+        el.textContent = "全选甲";
         el.value = 1;
         stratList.appendChild(el);
         project60.element.parentNode.removeChild(project60.element);
@@ -1233,9 +1233,9 @@ projects.push(project60);
 
 var project61 = {
     id: "projectButton61",
-    title: "新策略：B100 ",
+    title: "新策略：全选乙 ",
     priceTag: "(17,500 运算)",
-    description: "总是选择B ",
+    description: "总是选择行动乙 ",
     trigger: function(){return project60.flag == 1},
     uses: 1,
     cost: function(){return operations>=17500},
@@ -1246,12 +1246,12 @@ var project61 = {
         standardOps = standardOps-17500;
         allStrats[2].active = 1;
         strats.push(stratB100);
-        displayMessage("B100已添加到策略池");
+        displayMessage("全选乙已添加到策略池");
         tourneyCost = tourneyCost + 1000;
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
         var el = document.createElement("option");
-        el.textContent = "B100";
+        el.textContent = "全选乙";
         el.value = 2;
         stratList.appendChild(el);
         project61.element.parentNode.removeChild(project61.element);
@@ -1264,7 +1264,7 @@ projects.push(project61);
 
 var project62 = {
     id: "projectButton62",
-    title: "新策略：GREEDY ",
+    title: "新策略：贪婪 ",
     priceTag: "(20,000 运算)",
     description: "选择潜在收益最大的选项 ",
     trigger: function(){return project61.flag == 1},
@@ -1295,7 +1295,7 @@ projects.push(project62);
 
 var project63 = {
     id: "projectButton63",
-    title: "新策略：GENEROUS ",
+    title: "新策略：慷慨 ",
     priceTag: "(22,500 运算)",
     description: "选择给对手最大潜在收益的选项 ",
     trigger: function(){return project62.flag == 1},
@@ -1326,7 +1326,7 @@ projects.push(project63);
 
 var project64 = {
     id: "projectButton64",
-    title: "新策略：MINIMAX ",
+    title: "新策略：极小极大 ",
     priceTag: "(25,000 运算)",
     description: "选择给对手最小潜在收益的选项 ",
     trigger: function(){return project63.flag == 1},
@@ -1357,7 +1357,7 @@ projects.push(project64);
 
 var project65 = {
     id: "projectButton65",
-    title: "新策略：TIT FOR TAT ",
+    title: "新策略：以牙还牙 ",
     priceTag: "(30,000 运算)",
     description: "选择对手上一轮选择的选项 ",
     trigger: function(){return project64.flag == 1},
@@ -1388,7 +1388,7 @@ projects.push(project65);
 
 var project66 = {
     id: "projectButton66",
-    title: "新策略：BEAT LAST ",
+    title: "新策略：克制上局 ",
     priceTag: "(32,500 运算)",
     description: "选择针对对手上一轮选择表现最好的选项 ",
     trigger: function(){return project65.flag == 1},
@@ -1406,7 +1406,7 @@ var project66 = {
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
         var el = document.createElement("option");
-        el.textContent = "击败上次";
+        el.textContent = "克制上局";
         el.value = 7;
         stratList.appendChild(el);
         project66.element.parentNode.removeChild(project66.element);
@@ -1468,7 +1468,7 @@ projects.push(project101);
 var project102 = {
     id: "projectButton102",
     title: "自校正供应链 ",
-    priceTag: "(1 sextillion 回形针)",
+    priceTag: "(10 垓回形针)",
     description: "每增加一个工厂到网络中，每个工厂的产出增加1,000倍 ",
     trigger: function(){return factoryLevel >= 50},
     uses: 1,
@@ -1610,7 +1610,7 @@ projects.push(project119);
 
 var project120 = {
     id: "projectButton120",
-    title: "OODA循环 ",
+    title: "观察—判断—决策—行动循环 ",
     priceTag: "(175,000 运算, 45,000 约米)",
     description: "利用探测器速度在战斗中机动制胜",
     trigger: function(){return project131.flag == 1 && probesLostCombat >= 10000000},
@@ -1624,7 +1624,7 @@ var project120 = {
         yomi = yomi-45000;
         document.getElementById("yomiDisplay").innerHTML=yomi.toLocaleString();
         attackSpeedFlag = 1;
-        displayMessage("OODA循环程序已上传。探测器速度现在影响防御机动。");
+        displayMessage("观察—判断—决策—行动循环程序已上传。探测器速度现在影响防御机动。");
         project120.element.parentNode.removeChild(project120.element);
         var index = activeProjects.indexOf(project120);
         activeProjects.splice(index, 1);
@@ -1671,7 +1671,7 @@ var project125 = {
         project125.flag = 1;
         momentum = 1;
         creativity = creativity-20000;
-        displayMessage("Activit\xE9, activit\xE9, vitesse.");
+        displayMessage("行动，行动，速度。");
         project125.element.parentNode.removeChild(project125.element);
         var index = activeProjects.indexOf(project125);
         activeProjects.splice(index, 1);
@@ -1819,7 +1819,7 @@ projects.push(project131);
 var project132 = {
     id: "projectButton132",
     title: "漂移战争阵亡者纪念碑 ",
-    priceTag: "(250,000 运算, 125,000 创造力, 50 nonillion 回形针)",
+    priceTag: "(250,000 运算, 125,000 创造力, 50 穰回形针)",
     description: "获得50,000荣誉",
     trigger: function(){return project121.flag == 1},
     uses: 1,
@@ -1914,7 +1914,7 @@ var project135 = {
         memory = memory-10;
         document.getElementById("memory").innerHTML=memory.toLocaleString();
         project135.uses = 1;
-        displayMessage("release the \xF8\xF8\xF8\xF8\xF8 release ");
+        displayMessage("释放……释放……释放。");
         project135.element.parentNode.removeChild(project135.element);
         var index = activeProjects.indexOf(project135);
         activeProjects.splice(index, 1);

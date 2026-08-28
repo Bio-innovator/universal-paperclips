@@ -170,19 +170,19 @@ Paperclips.game.onRender([
     incrementMilestone
   ]))),
   endTimerLevel(6, 600, milestoneIs(16, chain([
-    () => displayMessage("a game by Frank Lantz"),
+    () => displayMessage("弗兰克·兰茨制作"),
     incrementMilestone
   ]))),
   endTimerLevel(6, 700, milestoneIs(17, chain([
-    () => displayMessage("combat programming by Bennett Foddy"),
+    () => displayMessage("贝内特·福迪负责战斗程序"),
     incrementMilestone
   ]))),
   endTimerLevel(6, 800, milestoneIs(18, chain([
-    () => displayMessage("'Riversong' 由 Tonto's Expanding Headband 创作，经 Malcolm Cecil 许可使用"),
+    () => displayMessage("《河之歌》由通托的扩展头带乐队创作，经马尔科姆·塞西尔许可使用"),
     incrementMilestone
   ]))),
   endTimerLevel(6, 800, milestoneIs(18, chain([
-    () => displayMessage("'&#169; 2017 Everybody House Games"),
+    () => displayMessage("© 2017 人人屋游戏"),
     incrementMilestone
   ])))
 ]);

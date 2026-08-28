@@ -1,7 +1,8 @@
-<html>
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>宇宙回形针</title>
     <link rel="stylesheet" type="text/css" href="interface.css" />
     <link rel="stylesheet" type="text/css" href="extra.css" />
   </head>
@@ -126,7 +127,7 @@
         <p class = "engineText5">
         <button class = "button2" id = "btnHarvesterx10" onclick="makeHarvester(10)">+10</button>
         <button class = "button2" id = "btnHarvesterx100" onclick="makeHarvester(100)">+100</button>
-        <button class = "button2" id = "btnHarvesterx1000" onclick="makeHarvester(1000)">+1k</button>
+        <button class = "button2" id = "btnHarvesterx1000" onclick="makeHarvester(1000)">+1000</button>
         </p>
 
         </div>
@@ -154,7 +155,7 @@
         <p class = "engineText5">
         <button class = "button2" id = "btnWireDronex10" onclick="makeWireDrone(10)">+10</button>
         <button class = "button2" id = "btnWireDronex100" onclick="makeWireDrone(100)">+100</button>
-        <button class = "button2" id = "btnWireDronex1000" onclick="makeWireDrone(1000)">+1k</button></p>
+        <button class = "button2" id = "btnWireDronex1000" onclick="makeWireDrone(1000)">+1000</button></p>
         </div>
 
         <div class = "toolTip3">
@@ -544,18 +545,18 @@
 
             <tr>
                 <th>&nbsp;</th>
-                <th><span id= vLabela>行动 A</span></th>
-                <th><span id= vLabelb>行动 B</span></th>
+                <th><span id= vLabela>行动甲</span></th>
+                <th><span id= vLabelb>行动乙</span></th>
             </tr>
 
             <tr>
-                <td><span id= hLabela>行动 A</span></td>
+                <td><span id= hLabela>行动甲</span></td>
                 <td id = "payoffCellAA"><span id = aaPayoffH>0</span>,<span id = aaPayoffV>0</span></td>
                 <td id = "payoffCellAB"><span id = abPayoffH>0</span>,<span id = abPayoffV>0</span></td>
 
             </tr>
             <tr>
-                <td><span id= hLabelb>行动 B</span></td>
+                <td><span id= hLabelb>行动乙</span></td>
                 <td id = "payoffCellBA"><span id = baPayoffH>0</span>,<span id = baPayoffV>0</span></td>
                 <td id = "payoffCellBB"><span id = bbPayoffH>0</span>,<span id = bbPayoffV>0</span></td>
 
@@ -877,12 +878,12 @@
     <!-- HTML Templates -->
     <div id="templates" class="hidden">
       <button id="projectButtonTemplate" class="projectButton">
-        <span class="project-button__title">TITLE</span>
-        <span class="project-button__cost">COST</span>
-        <p class="project-button__description">DESCRIPTION</p>
+        <span class="project-button__title">项目名称</span>
+        <span class="project-button__cost">项目成本</span>
+        <p class="project-button__description">项目说明</p>
       </button>
       <div id="panelTemplate" class="panel hidden">
-        <h3 class="panel__title">TITLE</h3>
+        <h3 class="panel__title">面板标题</h3>
         <hr />
         <div class="panel__content"></div>
       </div>
@@ -907,8 +908,5 @@
 
     <!-- Plugins -->
     <script type="text/javascript" src="plugins/SaveManager.js"></script>
-    <script type="text/javascript" src="plugins/Debug.js"></script>
-    <script type="text/javascript" src="plugins/BetterSimPrestige.js"></script>
-    <script type="text/javascript" src="plugins/PerformanceMonitor.js"></script>
   </body>
 </html>
